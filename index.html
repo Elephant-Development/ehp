@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elephant Development</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d99;
+            padding: 1rem;
+            text-align: center;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 5rem 2rem;
+        }
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #004d99;
+            color: white;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
@@ -18,15 +69,15 @@
         </nav>
     </header>
     <main>
-        <section id="home">
+        <section id="home" class="hero">
             <h1>Welcome to Elephant Development</h1>
             <p>Your partner in software solutions</p>
         </section>
-        <section id="about">
+        <section id="about" class="content">
             <h2>About Us</h2>
-            <p>Elephant Development is a startup software development company specializing in innovative solutions for businesses of all sizes.</p>
+            <p>We specialize in innovative software solutions for businesses of all sizes, helping them stay ahead in the digital age.</p>
         </section>
-        <section id="services">
+        <section id="services" class="content">
             <h2>Our Services</h2>
             <ul>
                 <li>Custom Software Development</li>
